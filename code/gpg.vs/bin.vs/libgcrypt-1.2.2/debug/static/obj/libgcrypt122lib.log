@@ -1,0 +1,350 @@
+﻿Build started 4/17/2015 7:25:10 PM.
+     1>Project "C:\damian\trillianotr-code\code\gpg.vs\libgcrypt-1.2.2.vs\libgcrypt122lib.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I.\custom /I..\inc.vs /I"..\..\libgcrypt-1.2.2\libgcrypt\cipher" /I"..\..\libgcrypt-1.2.2\libgcrypt\mpi" /I"..\..\libgcrypt-1.2.2\libgcrypt\mpi\generic" /I"..\..\libgcrypt-1.2.2\libgcrypt\src" /I"..\..\libgpg-error-1.0\libgpg-error\src" /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WIN32 /D _DEBUG /D _LIB /D HAVE_CONFIG_H /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/" /Fd".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/vc120.pdb" /Gd /TC /analyze- /errorReport:prompt "..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c" "..\..\libgcrypt-1.2.2\libgcrypt\cipher\arcfour.c" "..\..\libgcrypt-1.2.2\libgcrypt\cipher\blowfish.c" "..\..\libgcrypt-1.2.2\libgcrypt\cipher\cast5.c" "..\..\libgcrypt-1.2.2\libgcrypt\cipher\cipher.c" "..\..\libgcrypt-1.2.2\libgcrypt\cipher\crc.c" "..\..\libgcrypt-1.2.2\libgcrypt\cipher\des.c" "..\..\libgcrypt-1.2.2\libgcrypt\cipher\dsa.c" "..\..\libgcrypt-1.2.2\libgcrypt\cipher\elgamal.c" "..\..\libgcrypt-1.2.2\libgcrypt\cipher\md.c" "..\..\libgcrypt-1.2.2\libgcrypt\cipher\md4.c" "..\..\libgcrypt-1.2.2\libgcrypt\cipher\md5.c" "..\..\libgcrypt-1.2.2\libgcrypt\cipher\primegen.c" "..\..\libgcrypt-1.2.2\libgcrypt\cipher\pubkey.c" "..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.c" "..\..\libgcrypt-1.2.2\libgcrypt\cipher\rfc2268.c" "..\..\libgcrypt-1.2.2\libgcrypt\cipher\rijndael.c" "..\..\libgcrypt-1.2.2\libgcrypt\cipher\rmd160.c" "..\..\libgcrypt-1.2.2\libgcrypt\cipher\rndw32.c" "..\..\libgcrypt-1.2.2\libgcrypt\cipher\rsa.c" "..\..\libgcrypt-1.2.2\libgcrypt\cipher\serpent.c" "..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha1.c" "..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha256.c" "..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha512.c" "..\..\libgcrypt-1.2.2\libgcrypt\cipher\tiger.c" "..\..\libgcrypt-1.2.2\libgcrypt\cipher\twofish.c" "..\..\libgcrypt-1.2.2\libgcrypt\mpi\generic\mpih-add1.c" "..\..\libgcrypt-1.2.2\libgcrypt\mpi\generic\mpih-lshift.c" "..\..\libgcrypt-1.2.2\libgcrypt\mpi\generic\mpih-mul1.c" "..\..\libgcrypt-1.2.2\libgcrypt\mpi\generic\mpih-mul2.c" "..\..\libgcrypt-1.2.2\libgcrypt\mpi\generic\mpih-mul3.c" "..\..\libgcrypt-1.2.2\libgcrypt\mpi\generic\mpih-rshift.c" "..\..\libgcrypt-1.2.2\libgcrypt\mpi\generic\mpih-sub1.c" "..\..\libgcrypt-1.2.2\libgcrypt\mpi\generic\udiv-w-sdiv.c" "..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-add.c" "..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-bit.c" "..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-cmp.c" "..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-div.c" "..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-gcd.c" "..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-inline.c" "..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-inv.c" "..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-mpow.c" "..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-mul.c" "..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-pow.c" "..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-scan.c" "..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpicoder.c" "..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpih-div.c" "..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpih-mul.c" "..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpiutil.c" "..\..\libgcrypt-1.2.2\libgcrypt\src\ath.c" "..\..\libgcrypt-1.2.2\libgcrypt\src\global.c" "..\..\libgcrypt-1.2.2\libgcrypt\src\misc.c" "..\..\libgcrypt-1.2.2\libgcrypt\src\missing-string.c" "..\..\libgcrypt-1.2.2\libgcrypt\src\module.c" "..\..\libgcrypt-1.2.2\libgcrypt\src\secmem.c" "..\..\libgcrypt-1.2.2\libgcrypt\src\sexp.c" "..\..\libgcrypt-1.2.2\libgcrypt\src\stdmem.c"
+         ac.c
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c(148): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c(270): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c(307): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(195) : see declaration of 'strncpy'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c(387): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c(397): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c(422): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(118) : see declaration of 'strcat'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c(423): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(118) : see declaration of 'strcat'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c(426): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(118) : see declaration of 'strcat'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c(430): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(118) : see declaration of 'strcat'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c(431): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(118) : see declaration of 'strcat'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c(433): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(118) : see declaration of 'strcat'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c(435): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(118) : see declaration of 'strcat'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c(436): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(118) : see declaration of 'strcat'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c(437): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c(439): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(118) : see declaration of 'strcat'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c(440): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(118) : see declaration of 'strcat'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c(441): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(118) : see declaration of 'strcat'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c(443): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(118) : see declaration of 'strcat'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c(502): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c(903): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(118) : see declaration of 'strcat'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c(907): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(118) : see declaration of 'strcat'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c(908): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(118) : see declaration of 'strcat'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c(1051): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c(1170): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(118) : see declaration of 'strcat'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c(1174): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(118) : see declaration of 'strcat'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c(1175): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(118) : see declaration of 'strcat'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c(1177): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(118) : see declaration of 'strcat'
+         arcfour.c
+         blowfish.c
+         cast5.c
+         cipher.c
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\cipher.c(198): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(253) : see declaration of 'stricmp'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\cipher.c(202): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(253) : see declaration of 'stricmp'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\cipher.c(218): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(253) : see declaration of 'stricmp'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\cipher.c(307): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(253) : see declaration of 'stricmp'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\cipher.c(784): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\cipher.c(813): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\cipher.c(844): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\cipher.c(867): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\cipher.c(870): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\cipher.c(884): warning C4018: '<=' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\cipher.c(908): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\cipher.c(932): warning C4018: '<=' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\cipher.c(937): warning C4244: '=' : conversion from 'ulong' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\cipher.c(938): warning C4244: '=' : conversion from 'ulong' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\cipher.c(948): warning C4244: '=' : conversion from 'ulong' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\cipher.c(949): warning C4244: '=' : conversion from 'ulong' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\cipher.c(960): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\cipher.c(962): warning C4244: '=' : conversion from 'ulong' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\cipher.c(963): warning C4244: '=' : conversion from 'ulong' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\cipher.c(976): warning C4244: '=' : conversion from 'ulong' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\cipher.c(977): warning C4244: '=' : conversion from 'ulong' to 'byte', possible loss of data
+         crc.c
+         des.c
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\des.c(971): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\des.c(979): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+         dsa.c
+         elgamal.c
+         md.c
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\md.c(165): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(253) : see declaration of 'stricmp'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\md.c(180): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(253) : see declaration of 'stricmp'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\md.c(264): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(253) : see declaration of 'stricmp'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\md.c(1126): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\md.c(1127): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+         md4.c
+         md5.c
+         primegen.c
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\primegen.c(711): warning C4018: '<' : signed/unsigned mismatch
+         pubkey.c
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\pubkey.c(184): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(253) : see declaration of 'stricmp'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\pubkey.c(187): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(253) : see declaration of 'stricmp'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\pubkey.c(1423): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\pubkey.c(1436): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\pubkey.c(1641): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\pubkey.c(1650): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\pubkey.c(1974): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\pubkey.c(1991): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\pubkey.c(2149): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+         random.c
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.c(149): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(168) : see declaration of 'strerror'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.c(154): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(168) : see declaration of 'strerror'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.c(270): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(168) : see declaration of 'strerror'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.c(304): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(168) : see declaration of 'strerror'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.c(380): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(168) : see declaration of 'strerror'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.c(410): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(168) : see declaration of 'strerror'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.c(551): warning C4013: 'open' undefined; assuming extern returning int
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.c(563): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(168) : see declaration of 'strerror'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.c(568): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(168) : see declaration of 'strerror'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.c(569): warning C4013: 'close' undefined; assuming extern returning int
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.c(594): warning C4013: 'read' undefined; assuming extern returning int
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.c(600): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(168) : see declaration of 'strerror'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.c(610): warning C4013: 'getpid' undefined; assuming extern returning int
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.c(651): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(168) : see declaration of 'strerror'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.c(671): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(168) : see declaration of 'strerror'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.c(676): warning C4013: 'write' undefined; assuming extern returning int
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.c(681): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(168) : see declaration of 'strerror'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.c(684): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(168) : see declaration of 'strerror'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.c(690): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(168) : see declaration of 'strerror'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.c(762): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.c(1033): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(168) : see declaration of 'strerror'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.c(1041): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(168) : see declaration of 'strerror'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.c(1093): warning C4244: 'function' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.c(1136): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(168) : see declaration of 'strerror'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.c(1184): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(168) : see declaration of 'strerror'
+         rfc2268.c
+         rijndael.c
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\rijndael.c(1767): warning C4018: '<' : signed/unsigned mismatch
+         rmd160.c
+         rndw32.c
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\rndw32.c(342): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(253) : see declaration of 'stricmp'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\rndw32.c(398): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\rndw32.c(527): warning C4996: 'GetVersionExA': was declared deprecated
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\um\sysinfoapi.h(433) : see declaration of 'GetVersionExA'
+         rsa.c
+         Generating Code...
+         Compiling...
+         serpent.c
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\serpent.c(588): warning C4018: '<' : signed/unsigned mismatch
+         sha1.c
+         sha256.c
+         sha512.c
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha512.c(316): warning C4244: '=' : conversion from 'u64' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha512.c(317): warning C4244: '=' : conversion from 'u64' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha512.c(318): warning C4244: '=' : conversion from 'u64' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha512.c(319): warning C4244: '=' : conversion from 'u64' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha512.c(320): warning C4244: '=' : conversion from 'u64' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha512.c(321): warning C4244: '=' : conversion from 'u64' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha512.c(322): warning C4244: '=' : conversion from 'u64' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha512.c(325): warning C4244: '=' : conversion from 'u64' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha512.c(326): warning C4244: '=' : conversion from 'u64' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha512.c(327): warning C4244: '=' : conversion from 'u64' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha512.c(328): warning C4244: '=' : conversion from 'u64' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha512.c(329): warning C4244: '=' : conversion from 'u64' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha512.c(330): warning C4244: '=' : conversion from 'u64' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha512.c(331): warning C4244: '=' : conversion from 'u64' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha512.c(344): warning C4244: '=' : conversion from 'u64' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha512.c(345): warning C4244: '=' : conversion from 'u64' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha512.c(346): warning C4244: '=' : conversion from 'u64' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha512.c(347): warning C4244: '=' : conversion from 'u64' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha512.c(348): warning C4244: '=' : conversion from 'u64' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha512.c(349): warning C4244: '=' : conversion from 'u64' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha512.c(352): warning C4244: '=' : conversion from 'u64' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha512.c(353): warning C4244: '=' : conversion from 'u64' to 'byte', possible loss of data
+         tiger.c
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\tiger.c(817): warning C4244: '=' : conversion from 'u64' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\tiger.c(818): warning C4244: '=' : conversion from 'u64' to 'byte', possible loss of data
+     1>..\..\libgcrypt-1.2.2\libgcrypt\cipher\tiger.c(819): warning C4244: '=' : conversion from 'u64' to 'byte', possible loss of data
+         twofish.c
+         mpih-add1.c
+         mpih-lshift.c
+         mpih-mul1.c
+         mpih-mul2.c
+         mpih-mul3.c
+         mpih-rshift.c
+         mpih-sub1.c
+         udiv-w-sdiv.c
+         mpi-add.c
+         mpi-bit.c
+     1>..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-bit.c(106): warning C4018: '>=' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-bit.c(124): warning C4018: '>=' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-bit.c(125): warning C4018: '>=' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-bit.c(143): warning C4018: '>=' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-bit.c(144): warning C4018: '>=' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-bit.c(165): warning C4018: '>=' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-bit.c(184): warning C4018: '>=' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-bit.c(227): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-bit.c(231): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-bit.c(248): warning C4018: '>=' : signed/unsigned mismatch
+         mpi-cmp.c
+         mpi-div.c
+         mpi-gcd.c
+         mpi-inline.c
+         Generating Code...
+         Compiling...
+         mpi-inv.c
+         mpi-mpow.c
+         mpi-mul.c
+         mpi-pow.c
+         mpi-scan.c
+     1>..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-scan.c(117): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-scan.c(122): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+         mpicoder.c
+     1>..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpicoder.c(112): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpicoder.c(604): warning C4018: '<' : signed/unsigned mismatch
+         mpih-div.c
+     1>..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpih-div.c(85): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+     1>..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpih-div.c(122): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+     1>..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpih-div.c(284): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+     1>..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpih-div.c(432): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+     1>..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpih-div.c(468): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+         mpih-mul.c
+         mpiutil.c
+     1>..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpiutil.c(124): warning C4018: '<=' : signed/unsigned mismatch
+         ath.c
+     1>..\..\libgcrypt-1.2.2\libgcrypt\src\ath.c(218): warning C4013: 'read' undefined; assuming extern returning int
+     1>..\..\libgcrypt-1.2.2\libgcrypt\src\ath.c(228): warning C4013: 'write' undefined; assuming extern returning int
+         global.c
+     1>..\..\libgcrypt-1.2.2\libgcrypt\src\global.c(551): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
+         misc.c
+     1>..\..\libgcrypt-1.2.2\libgcrypt\src\misc.c(66): warning C4013: 'write' undefined; assuming extern returning int
+         missing-string.c
+         module.c
+         secmem.c
+     1>..\..\libgcrypt-1.2.2\libgcrypt\src\secmem.c(128): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\src\secmem.c(184): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\src\secmem.c(207): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\src\secmem.c(588): warning C4018: '<' : signed/unsigned mismatch
+         sexp.c
+     1>..\..\libgcrypt-1.2.2\libgcrypt\src\sexp.c(1104): warning C4018: '>' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\src\sexp.c(1233): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\src\sexp.c(1458): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\libgcrypt-1.2.2\libgcrypt\src\sexp.c(1459): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\src\sexp.c(1488): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>..\..\libgcrypt-1.2.2\libgcrypt\src\sexp.c(1648): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+         stdmem.c
+         Generating Code...
+     1>c:\damian\trillianotr-code\code\libgcrypt-1.2.2\libgcrypt\mpi\mpiutil.c(427): warning C4715: 'gcry_mpi_get_flag' : not all control paths return a value
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1361,5): warning MSB8012: TargetPath(C:\damian\trillianotr-code\code\gpg.vs\libgcrypt-1.2.2.vs\.\..\bin.vs\libgcrypt-1.2.2\debug\static\libgcrypt122lib.lib) does not match the Library's OutputFile property value (C:\damian\trillianotr-code\code\gpg.vs\bin.vs\libgcrypt-1.2.2\debug\static\libgcrypt.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1363,5): warning MSB8012: TargetName(libgcrypt122lib) does not match the Library's OutputFile property value (libgcrypt). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"..\bin.vs\libgcrypt-1.2.2\debug\static\libgcrypt.lib" /NOLOGO ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/ac.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/arcfour.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/blowfish.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/cast5.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/cipher.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/crc.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/des.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/dsa.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/elgamal.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/md.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/md4.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/md5.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/primegen.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/pubkey.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/random.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/rfc2268.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/rijndael.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/rmd160.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/rndw32.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/rsa.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/serpent.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/sha1.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/sha256.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/sha512.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/tiger.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/twofish.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/mpih-add1.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/mpih-lshift.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/mpih-mul1.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/mpih-mul2.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/mpih-mul3.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/mpih-rshift.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/mpih-sub1.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/udiv-w-sdiv.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/mpi-add.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/mpi-bit.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/mpi-cmp.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/mpi-div.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/mpi-gcd.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/mpi-inline.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/mpi-inv.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/mpi-mpow.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/mpi-mul.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/mpi-pow.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/mpi-scan.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/mpicoder.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/mpih-div.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/mpih-mul.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/mpiutil.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/ath.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/global.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/misc.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/missing-string.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/module.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/secmem.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/sexp.obj"
+         ".\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/stdmem.obj"
+         libgcrypt122lib.vcxproj -> C:\damian\trillianotr-code\code\gpg.vs\libgcrypt-1.2.2.vs\.\..\bin.vs\libgcrypt-1.2.2\debug\static\libgcrypt122lib.lib
+     1>Done Building Project "C:\damian\trillianotr-code\code\gpg.vs\libgcrypt-1.2.2.vs\libgcrypt122lib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:08.41

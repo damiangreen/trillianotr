@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EA46C88E-B365-44BA-89E6-1F199E12F576}</ProjectGuid>
+    <SccProjectName />
+    <SccLocalPath />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\bin.vs\libgcrypt-1.2.2\release\static\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\bin.vs\libgcrypt-1.2.2\release\static\obj\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\bin.vs\libgcrypt-1.2.2\debug\static\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\bin.vs\libgcrypt-1.2.2\debug\static\obj\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">libgcrypt</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\custom;..\inc.vs;..\..\libgcrypt-1.2.2\libgcrypt\cipher;..\..\libgcrypt-1.2.2\libgcrypt\mpi;..\..\libgcrypt-1.2.2\libgcrypt\mpi\generic;..\..\libgcrypt-1.2.2\libgcrypt\src;..\..\libgpg-error-1.0\libgpg-error\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\..\bin.vs\libgcrypt-1.2.2\release\static\obj/libgcrypt122lib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\..\bin.vs\libgcrypt-1.2.2\release\static\obj/</AssemblerListingLocation>
+      <ObjectFileName>.\..\bin.vs\libgcrypt-1.2.2\release\static\obj/</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\bin.vs\libgcrypt-1.2.2\release\static\obj/</ProgramDataBaseFileName>
+      <WarningLevel>Level2</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>..\bin.vs\libgcrypt-1.2.2\release\static\libgcrypt.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0410</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\custom;..\inc.vs;..\..\libgcrypt-1.2.2\libgcrypt\cipher;..\..\libgcrypt-1.2.2\libgcrypt\mpi;..\..\libgcrypt-1.2.2\libgcrypt\mpi\generic;..\..\libgcrypt-1.2.2\libgcrypt\src;..\..\libgpg-error-1.0\libgpg-error\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;_DEBUG;_LIB;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/libgcrypt122lib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/</AssemblerListingLocation>
+      <ObjectFileName>.\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\bin.vs\libgcrypt-1.2.2\debug\static\obj/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>..\bin.vs\libgcrypt-1.2.2\debug\static\libgcrypt.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0410</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\arcfour.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\blowfish.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\cast5.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\cipher.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\crc.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\des.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\dsa.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\elgamal.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\md.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\md4.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\md5.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\primegen.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\pubkey.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\rfc2268.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\rijndael.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\rmd160.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\rndw32.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\rsa.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\serpent.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha1.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha256.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha512.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\tiger.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\twofish.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\generic\mpih-add1.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\generic\mpih-lshift.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\generic\mpih-mul1.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\generic\mpih-mul2.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\generic\mpih-mul3.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\generic\mpih-rshift.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\generic\mpih-sub1.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\generic\udiv-w-sdiv.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-add.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-bit.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-cmp.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-div.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-gcd.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-inline.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-inv.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-mpow.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-mul.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-pow.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-scan.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpicoder.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpih-div.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpih-mul.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpiutil.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\src\ath.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\src\global.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\src\misc.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\src\missing-string.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\src\module.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\src\secmem.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\src\sexp.c" />
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\src\stdmem.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\bithelp.h" />
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\rand-internal.h" />
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.h" />
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\rmd.h" />
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\generic\mpi-asm-defs.h" />
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\longlong.h" />
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-inline.h" />
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-internal.h" />
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\src\ath.h" />
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\src\cipher.h" />
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\src\g10lib.h" />
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\src\gcrypt-module.h" />
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\src\gcrypt.h" />
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\src\mpi.h" />
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\src\secmem.h" />
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\src\stdmem.h" />
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\src\types.h" />
+    <ClInclude Include="custom\config.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

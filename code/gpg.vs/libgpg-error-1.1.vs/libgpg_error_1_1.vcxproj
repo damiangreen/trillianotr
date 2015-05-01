@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{629F6BF1-7ED3-4962-91BA-10624AF6B476}</ProjectGuid>
+    <SccProjectName />
+    <SccLocalPath />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\bin.vs\libgpg-error-1.1\release\static\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\bin.vs\libgpg-error-1.1\release\static\obj\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\bin.vs\libgpg-error-1.0\debug\static\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\bin.vs\libgpg-error-1.0\debug\static\obj\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">libgpg-error</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\custom;..\inc.vs;..\..\libgpg-error-1.0\libgpg-error\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;_DEBUG;_LIB;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderOutputFile>.\..\bin.vs\libgpg-error-1.1\release\static\obj/libgpg_error_1_1.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\..\bin.vs\libgpg-error-1.1\release\static\obj/</AssemblerListingLocation>
+      <ObjectFileName>.\..\bin.vs\libgpg-error-1.1\release\static\obj/</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\bin.vs\libgpg-error-1.1\release\static\obj/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>..\bin.vs\libgpg-error-1.1\release\static\libgpg-error.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0410</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\custom;..\inc.vs;..\..\libgpg-error-1.0\libgpg-error\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;_DEBUG;_LIB;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderOutputFile>.\..\bin.vs\libgpg-error-1.0\debug\static\obj/libgpg_error_1_1.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\..\bin.vs\libgpg-error-1.0\debug\static\obj/</AssemblerListingLocation>
+      <ObjectFileName>.\..\bin.vs\libgpg-error-1.0\debug\static\obj/</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\bin.vs\libgpg-error-1.0\debug\static\obj/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>..\bin.vs\libgpg-error-1.1\debug\static\libgpg-error.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0410</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\libgpg-error-1.0\libgpg-error\src\err-codes.h" />
+    <ClInclude Include="..\..\libgpg-error-1.0\libgpg-error\src\err-sources.h" />
+    <ClInclude Include="..\..\libgpg-error-1.0\libgpg-error\src\gettext.h" />
+    <ClInclude Include="..\..\libgpg-error-1.0\libgpg-error\src\gpg-error.h" />
+    <ClInclude Include="custom\code-from-errno.h" />
+    <ClInclude Include="custom\code-to-errno.h" />
+    <ClInclude Include="custom\config.h" />
+    <ClInclude Include="custom\err-codes-sym.h" />
+    <ClInclude Include="custom\err-sources-sym.h" />
+    <ClInclude Include="custom\errnos-sym.h" />
+    <ClInclude Include="custom\mkerrcodes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\libgpg-error-1.0\libgpg-error\src\code-from-errno.c" />
+    <ClCompile Include="..\..\libgpg-error-1.0\libgpg-error\src\code-to-errno.c" />
+    <ClCompile Include="..\..\libgpg-error-1.0\libgpg-error\src\gpg-error.c" />
+    <ClCompile Include="..\..\libgpg-error-1.0\libgpg-error\src\mkerrcodes.c" />
+    <ClCompile Include="..\..\libgpg-error-1.0\libgpg-error\src\strerror-sym.c" />
+    <ClCompile Include="..\..\libgpg-error-1.0\libgpg-error\src\strerror.c" />
+    <ClCompile Include="..\..\libgpg-error-1.0\libgpg-error\src\strsource-sym.c" />
+    <ClCompile Include="..\..\libgpg-error-1.0\libgpg-error\src\strsource.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

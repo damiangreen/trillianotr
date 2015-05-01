@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{FD521B08-FBC3-5DA7-C4B8-7319BE265653}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\..\bin.vs\libotr-2.0.2\debug\static\</OutDir>
+    <IntDir>.\..\bin.vs\libotr-2.0.2\debug\static\obj\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\..\bin.vs\libotr-2.0.2\release\static\</OutDir>
+    <IntDir>.\..\bin.vs\libotr-2.0.2\release\static\obj\</IntDir>
+    <TargetName>libotr</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level2</WarningLevel>
+      <AdditionalIncludeDirectories>.\custom;..\inc.vs;..\..\gpg.vs\inc.vs;..\..\libgcrypt-1.2.2\libgcrypt\src;..\..\libgpg-error-1.0\libgpg-error\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;_DEBUG;_LIB;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\..\bin.vs\libotr-2.0.2\debug\static\obj\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\..\bin.vs\libotr-2.0.2\debug\static\obj\libotr202.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\..\bin.vs\libotr-2.0.2\debug\static\obj\</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\bin.vs\libotr-2.0.2\debug\static\obj\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0410</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>..\bin.vs\libotr202\debug\obj\libotr202.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>..\bin.vs\libotr-2.0.2\debug\static\libotr.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level2</WarningLevel>
+      <AdditionalIncludeDirectories>.\custom;..\..\libgpg-error-1.0\libgpg-error\src;..\..\libgcrypt-1.2.2\libgcrypt\src;..\inc.vs;..\..\gpg.vs\inc.vs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;_LIB;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\..\bin.vs\libotr-2.0.2\release\static\obj\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\..\bin.vs\libotr-2.0.2\release\static\obj\libotr202.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\..\bin.vs\libotr-2.0.2\release\static\obj\</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\bin.vs\libotr-2.0.2\release\static\obj\</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0410</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>..\bin.vs\libotr202\release\obj\libotr202.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>..\bin.vs\libotr-2.0.2\release\static\libotr.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\libotr-3.2.0\src\auth.h" />
+    <ClInclude Include="..\..\libotr-3.2.0\src\b64.h" />
+    <ClInclude Include="..\..\libotr-3.2.0\src\context.h" />
+    <ClInclude Include="..\..\libotr-3.2.0\src\dh.h" />
+    <ClInclude Include="..\..\libotr-3.2.0\src\mem.h" />
+    <ClInclude Include="..\..\libotr-3.2.0\src\message.h" />
+    <ClInclude Include="..\..\libotr-3.2.0\src\privkey-t.h" />
+    <ClInclude Include="..\..\libotr-3.2.0\src\privkey.h" />
+    <ClInclude Include="..\..\libotr-3.2.0\src\proto.h" />
+    <ClInclude Include="..\..\libotr-3.2.0\src\serial.h" />
+    <ClInclude Include="..\..\libotr-3.2.0\src\sm.h" />
+    <ClInclude Include="..\..\libotr-3.2.0\src\tlv.h" />
+    <ClInclude Include="..\..\libotr-3.2.0\src\userstate.h" />
+    <ClInclude Include="..\..\libotr-3.2.0\src\version.h" />
+    <ClInclude Include="custom\config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\libotr-3.2.0\src\auth.c" />
+    <ClCompile Include="..\..\libotr-3.2.0\src\b64.c" />
+    <ClCompile Include="..\..\libotr-3.2.0\src\context.c" />
+    <ClCompile Include="..\..\libotr-3.2.0\src\dh.c" />
+    <ClCompile Include="..\..\libotr-3.2.0\src\mem.c" />
+    <ClCompile Include="..\..\libotr-3.2.0\src\message.c" />
+    <ClCompile Include="..\..\libotr-3.2.0\src\privkey.c" />
+    <ClCompile Include="..\..\libotr-3.2.0\src\proto.c" />
+    <ClCompile Include="..\..\libotr-3.2.0\src\sm.c" />
+    <ClCompile Include="..\..\libotr-3.2.0\src\tlv.c" />
+    <ClCompile Include="..\..\libotr-3.2.0\src\userstate.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

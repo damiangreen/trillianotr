@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3384717f-f3e9-449e-8b31-16784c33dfc3}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{af1b530a-ea06-4ab4-b79a-d9cd741e2c88}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="custom">
+      <UniqueIdentifier>{efc39609-70b1-4e84-ad1c-ad30ceeda6ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="removed">
+      <UniqueIdentifier>{a014a759-7922-40a5-889d-2a993eed9703}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="custom\code-from-errno.h">
+      <Filter>custom</Filter>
+    </ClInclude>
+    <ClInclude Include="custom\code-to-errno.h">
+      <Filter>custom</Filter>
+    </ClInclude>
+    <ClInclude Include="custom\config.h">
+      <Filter>custom</Filter>
+    </ClInclude>
+    <ClInclude Include="custom\err-codes-sym.h">
+      <Filter>custom</Filter>
+    </ClInclude>
+    <ClInclude Include="custom\err-sources-sym.h">
+      <Filter>custom</Filter>
+    </ClInclude>
+    <ClInclude Include="custom\errnos-sym.h">
+      <Filter>custom</Filter>
+    </ClInclude>
+    <ClInclude Include="custom\mkerrcodes.h">
+      <Filter>custom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgpg-error-1.0\libgpg-error\src\err-sources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgpg-error-1.0\libgpg-error\src\gettext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgpg-error-1.0\libgpg-error\src\gpg-error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgpg-error-1.0\libgpg-error\src\err-codes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\libgpg-error-1.0\libgpg-error\src\strsource.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgpg-error-1.0\libgpg-error\src\strsource-sym.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgpg-error-1.0\libgpg-error\src\code-from-errno.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgpg-error-1.0\libgpg-error\src\code-to-errno.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgpg-error-1.0\libgpg-error\src\gpg-error.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgpg-error-1.0\libgpg-error\src\mkerrcodes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgpg-error-1.0\libgpg-error\src\strerror.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgpg-error-1.0\libgpg-error\src\strerror-sym.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

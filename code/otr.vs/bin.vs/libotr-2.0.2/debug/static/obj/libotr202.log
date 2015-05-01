@@ -1,0 +1,41 @@
+﻿Build started 4/17/2015 7:25:24 PM.
+     1>Project "C:\damian\trillianotr-code\code\otr.vs\libotr-2.0.2.vs\libotr202.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I.\custom /I..\inc.vs /I..\..\gpg.vs\inc.vs /I"..\..\libgcrypt-1.2.2\libgcrypt\src" /I"..\..\libgpg-error-1.0\libgpg-error\src" /Zi /nologo /W2 /WX- /Od /Oy- /D WIN32 /D _WIN32 /D _DEBUG /D _LIB /D HAVE_CONFIG_H /D _VC80_UPGRADE=0x0600 /Gm- /EHsc /RTC1 /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\..\bin.vs\libotr-2.0.2\debug\static\obj\\" /Fd".\..\bin.vs\libotr-2.0.2\debug\static\obj\vc120.pdb" /FR".\..\bin.vs\libotr-2.0.2\debug\static\obj\\" /Gd /TC /analyze- /errorReport:prompt "..\..\libotr-3.2.0\src\auth.c" "..\..\libotr-3.2.0\src\b64.c" "..\..\libotr-3.2.0\src\context.c" "..\..\libotr-3.2.0\src\dh.c" "..\..\libotr-3.2.0\src\mem.c" "..\..\libotr-3.2.0\src\message.c" "..\..\libotr-3.2.0\src\privkey.c" "..\..\libotr-3.2.0\src\proto.c" "..\..\libotr-3.2.0\src\sm.c" "..\..\libotr-3.2.0\src\tlv.c" "..\..\libotr-3.2.0\src\userstate.c"
+         auth.c
+     1>..\..\libotr-3.2.0\src\auth.c(385): warning C4333: '>>' : right shift by too large amount, data loss
+     1>..\..\libotr-3.2.0\src\auth.c(416): warning C4333: '>>' : right shift by too large amount, data loss
+     1>..\..\libotr-3.2.0\src\auth.c(523): warning C4333: '>>' : right shift by too large amount, data loss
+         b64.c
+         context.c
+         dh.c
+         mem.c
+         message.c
+         privkey.c
+         proto.c
+         sm.c
+         tlv.c
+         userstate.c
+         Generating Code...
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1361,5): warning MSB8012: TargetPath(C:\damian\trillianotr-code\code\otr.vs\libotr-2.0.2.vs\.\..\bin.vs\libotr-2.0.2\debug\static\libotr202.lib) does not match the Library's OutputFile property value (C:\damian\trillianotr-code\code\otr.vs\bin.vs\libotr-2.0.2\debug\static\libotr.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1363,5): warning MSB8012: TargetName(libotr202) does not match the Library's OutputFile property value (libotr). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"..\bin.vs\libotr-2.0.2\debug\static\libotr.lib" /NOLOGO ".\..\bin.vs\libotr-2.0.2\debug\static\obj\auth.obj"
+         ".\..\bin.vs\libotr-2.0.2\debug\static\obj\b64.obj"
+         ".\..\bin.vs\libotr-2.0.2\debug\static\obj\context.obj"
+         ".\..\bin.vs\libotr-2.0.2\debug\static\obj\dh.obj"
+         ".\..\bin.vs\libotr-2.0.2\debug\static\obj\mem.obj"
+         ".\..\bin.vs\libotr-2.0.2\debug\static\obj\message.obj"
+         ".\..\bin.vs\libotr-2.0.2\debug\static\obj\privkey.obj"
+         ".\..\bin.vs\libotr-2.0.2\debug\static\obj\proto.obj"
+         ".\..\bin.vs\libotr-2.0.2\debug\static\obj\sm.obj"
+         ".\..\bin.vs\libotr-2.0.2\debug\static\obj\tlv.obj"
+         ".\..\bin.vs\libotr-2.0.2\debug\static\obj\userstate.obj"
+         libotr202.vcxproj -> C:\damian\trillianotr-code\code\otr.vs\libotr-2.0.2.vs\.\..\bin.vs\libotr-2.0.2\debug\static\libotr202.lib
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\bscmake.exe /nologo /o"..\bin.vs\libotr202\debug\obj\libotr202.bsc" ".\..\bin.vs\libotr-2.0.2\debug\static\obj\auth.sbr" ".\..\bin.vs\libotr-2.0.2\debug\static\obj\b64.sbr" ".\..\bin.vs\libotr-2.0.2\debug\static\obj\context.sbr" ".\..\bin.vs\libotr-2.0.2\debug\static\obj\dh.sbr" ".\..\bin.vs\libotr-2.0.2\debug\static\obj\mem.sbr" ".\..\bin.vs\libotr-2.0.2\debug\static\obj\message.sbr" ".\..\bin.vs\libotr-2.0.2\debug\static\obj\privkey.sbr" ".\..\bin.vs\libotr-2.0.2\debug\static\obj\proto.sbr" ".\..\bin.vs\libotr-2.0.2\debug\static\obj\sm.sbr" ".\..\bin.vs\libotr-2.0.2\debug\static\obj\tlv.sbr" ".\..\bin.vs\libotr-2.0.2\debug\static\obj\userstate.sbr"
+     1>Done Building Project "C:\damian\trillianotr-code\code\otr.vs\libotr-2.0.2.vs\libotr202.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:07.97

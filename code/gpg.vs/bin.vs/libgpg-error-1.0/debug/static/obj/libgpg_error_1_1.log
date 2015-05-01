@@ -1,0 +1,52 @@
+﻿Build started 4/17/2015 7:25:03 PM.
+     1>Project "C:\damian\trillianotr-code\code\gpg.vs\libgpg-error-1.1.vs\libgpg_error_1_1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I.\custom /I..\inc.vs /I"..\..\libgpg-error-1.0\libgpg-error\src" /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WIN32 /D _DEBUG /D _LIB /D HAVE_CONFIG_H /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo".\..\bin.vs\libgpg-error-1.0\debug\static\obj/" /Fd".\..\bin.vs\libgpg-error-1.0\debug\static\obj/vc120.pdb" /FR".\..\bin.vs\libgpg-error-1.0\debug\static\obj\\" /Gd /TC /analyze- /errorReport:prompt "..\..\libgpg-error-1.0\libgpg-error\src\code-from-errno.c" "..\..\libgpg-error-1.0\libgpg-error\src\code-to-errno.c" "..\..\libgpg-error-1.0\libgpg-error\src\gpg-error.c" "..\..\libgpg-error-1.0\libgpg-error\src\mkerrcodes.c" "..\..\libgpg-error-1.0\libgpg-error\src\strerror-sym.c" "..\..\libgpg-error-1.0\libgpg-error\src\strerror.c" "..\..\libgpg-error-1.0\libgpg-error\src\strsource-sym.c" "..\..\libgpg-error-1.0\libgpg-error\src\strsource.c"
+         code-from-errno.c
+         code-to-errno.c
+         gpg-error.c
+     1>..\..\libgpg-error-1.0\libgpg-error\src\gpg-error.c(88): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strnicmp. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(255) : see declaration of 'strnicmp'
+     1>..\..\libgpg-error-1.0\libgpg-error\src\gpg-error.c(100): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(253) : see declaration of 'stricmp'
+     1>..\..\libgpg-error-1.0\libgpg-error\src\gpg-error.c(107): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strnicmp. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(255) : see declaration of 'strnicmp'
+     1>..\..\libgpg-error-1.0\libgpg-error\src\gpg-error.c(120): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(253) : see declaration of 'stricmp'
+     1>..\..\libgpg-error-1.0\libgpg-error\src\gpg-error.c(176): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(253) : see declaration of 'stricmp'
+     1>..\..\libgpg-error-1.0\libgpg-error\src\gpg-error.c(190): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(253) : see declaration of 'stricmp'
+         mkerrcodes.c
+         strerror-sym.c
+         strerror.c
+     1>..\..\libgpg-error-1.0\libgpg-error\src\strerror.c(46): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(168) : see declaration of 'strerror'
+     1>..\..\libgpg-error-1.0\libgpg-error\src\strerror.c(108): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(168) : see declaration of 'strerror'
+     1>..\..\libgpg-error-1.0\libgpg-error\src\strerror.c(115): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+         strsource-sym.c
+         strsource.c
+         Generating Code...
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1361,5): warning MSB8012: TargetPath(C:\damian\trillianotr-code\code\gpg.vs\libgpg-error-1.1.vs\.\..\bin.vs\libgpg-error-1.0\debug\static\libgpg_error_1_1.lib) does not match the Library's OutputFile property value (C:\damian\trillianotr-code\code\gpg.vs\bin.vs\libgpg-error-1.1\debug\static\libgpg-error.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1363,5): warning MSB8012: TargetName(libgpg_error_1_1) does not match the Library's OutputFile property value (libgpg-error). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"..\bin.vs\libgpg-error-1.1\debug\static\libgpg-error.lib" /NOLOGO ".\..\bin.vs\libgpg-error-1.0\debug\static\obj/code-from-errno.obj"
+         ".\..\bin.vs\libgpg-error-1.0\debug\static\obj/code-to-errno.obj"
+         ".\..\bin.vs\libgpg-error-1.0\debug\static\obj/gpg-error.obj"
+         ".\..\bin.vs\libgpg-error-1.0\debug\static\obj/mkerrcodes.obj"
+         ".\..\bin.vs\libgpg-error-1.0\debug\static\obj/strerror-sym.obj"
+         ".\..\bin.vs\libgpg-error-1.0\debug\static\obj/strerror.obj"
+         ".\..\bin.vs\libgpg-error-1.0\debug\static\obj/strsource-sym.obj"
+         ".\..\bin.vs\libgpg-error-1.0\debug\static\obj/strsource.obj"
+     1>gpg-error.obj : warning LNK4006: _main already defined in mkerrcodes.obj; second definition ignored
+     1>gpg-error.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+         libgpg_error_1_1.vcxproj -> C:\damian\trillianotr-code\code\gpg.vs\libgpg-error-1.1.vs\.\..\bin.vs\libgpg-error-1.0\debug\static\libgpg_error_1_1.lib
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\bscmake.exe /nologo /o".\..\bin.vs\libgpg-error-1.0\debug\static\libgpg_error_1_1.bsc" ".\..\bin.vs\libgpg-error-1.0\debug\static\obj\code-from-errno.sbr" ".\..\bin.vs\libgpg-error-1.0\debug\static\obj\code-to-errno.sbr" ".\..\bin.vs\libgpg-error-1.0\debug\static\obj\gpg-error.sbr" ".\..\bin.vs\libgpg-error-1.0\debug\static\obj\mkerrcodes.sbr" ".\..\bin.vs\libgpg-error-1.0\debug\static\obj\strerror-sym.sbr" ".\..\bin.vs\libgpg-error-1.0\debug\static\obj\strerror.sbr" ".\..\bin.vs\libgpg-error-1.0\debug\static\obj\strsource-sym.sbr" ".\..\bin.vs\libgpg-error-1.0\debug\static\obj\strsource.sbr"
+     1>Done Building Project "C:\damian\trillianotr-code\code\gpg.vs\libgpg-error-1.1.vs\libgpg_error_1_1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.67

@@ -1,0 +1,403 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PREFS_DIALOG DIALOGEX 0, 0, 256, 251
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Release",IDC_STATIC,77,75,73,10,0,WS_EX_RIGHT
+    LTEXT           "Currently supported mediums:\n     - AIM\n     - ICQ\n     - MSN\n     - Yahoo\n     - Facebook\n     - Jabber (untested)\n     - Rendezvous (untested)",IDC_STATIC,109,135,125,88
+    DEFPUSHBUTTON   "Check SF Page",IDC_SFCHK,24,194,70,14
+    LTEXT           "This plugin is based off of the Off the Record messaging library, version 3.2.0. The source for this library can be found at http://www.cypherpunks.ca/otr/",IDC_STATIC,24,87,210,30
+    CONTROL         123,IDC_STATIC,"Static",SS_BITMAP,7,7,153,68
+    LTEXT           "v0.0.0 (Build 0)",IDC_VERSION_TEXT,158,75,76,10
+    LTEXT           "Questions regarding this plugin can be directed to:\nthisita@users.sourceforge.net",IDC_STATIC,24,115,173,19
+    LTEXT           "Trillian Off the Record",IDC_STATIC,91,18,70,8
+    PUSHBUTTON      "GPL License",IDC_GPLBUTTON,24,209,69,14
+END
+
+IDD_PREFS_GENERAL DIALOGEX 0, 0, 256, 250
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_KEYLIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,242,178
+    PUSHBUTTON      "Start Private Conversation",IDC_STARTPRVCONV,19,192,97,17
+    PUSHBUTTON      "Forget Fingerprint",IDC_FORGETFINGER,137,216,97,17
+    PUSHBUTTON      "Verify Fingerprint",IDC_VRFYFINGER,137,192,97,17
+    PUSHBUTTON      "End Private Conversation",IDC_ENDPRVCONV,19,216,97,17
+END
+
+IDD_PREFS_CONFIG DIALOGEX 0, 0, 256, 250
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "My Private Keys",IDC_PRIVKEYS,7,12,242,84
+    COMBOBOX        IDC_ACCOUNT_LIST,70,25,173,16,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Key for account:",IDC_STATIC,14,28,54,13
+    PUSHBUTTON      "Generate Key",IDC_GENERATE_KEY,12,54,231,13
+    GROUPBOX        "Default OTR Settings",IDC_STATIC,7,103,242,55
+    CONTROL         "Enable private messaging",IDC_PRVMSGING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,113,98,13
+    CONTROL         "Automatically initiate private messaging",IDC_AUTOINIT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,127,142,10
+    CONTROL         "Require private messaging",IDC_REQPRIVMSG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,33,139,101,10
+    LTEXT           "",IDC_KEY_FINGERPRINT,18,42,223,8,SS_CENTERIMAGE
+    LTEXT           "NOTE: Only accounts with connections will have their private keys visible. You may be offline for that account, but a connection must exist.",IDC_STATIC,12,74,232,16
+    GROUPBOX        "Message Handling",IDC_STATIC,7,162,242,39
+    CONTROL         "Automatically close finished sessions",IDC_AUTOCLOSE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,171,144,13
+    CONTROL         "Save history for encrypted conversations",IDC_SAVEPRIVATEHISTORY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,214,144,10
+    GROUPBOX        "History",IDC_STATIC,7,203,242,40
+    EDITTEXT        IDC_HISTORYFILELOCATION,17,225,201,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_HISTORYFILEOPENBTN,226,226,16,12
+    CONTROL         "Automatically close session when you close a message window",IDC_AUTOCLOSEWITHWINDOW,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,186,215,10
+END
+
+IDD_SESSIONID DIALOGEX 0, 0, 169, 74
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Private Session ID"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,112,53,50,14
+    LTEXT           "Private session with %s established.",IDC_SESSIONTITLE,7,7,155,22
+    LTEXT           "Secure Session  ID:",IDC_SESSIONDLG_FINGERPRINT,7,30,155,8
+    LTEXT           "Session ID",IDC_IDFIRSTHALF,7,38,46,8
+    LTEXT           "Session ID",IDC_IDLASTHALF,61,38,49,8
+END
+
+IDD_NEWFINGERPRINT DIALOGEX 0, 0, 244, 74
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "New Fingerprint"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,187,53,50,14
+    LTEXT           "Generating private key for %s...",IDC_NEWFINGERTITLE,7,7,230,22
+    LTEXT           "New Fingerprint:",IDC_SESSIONDLG_FINGERPRINT,7,29,230,8
+    LTEXT           "Fingerprint",IDC_NEWFINGERPRINT,7,39,230,8
+END
+
+IDD_UNKNOWN_FINGERPRINT DIALOGEX 0, 0, 244, 73
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Unknown Fingerprint"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,187,52,50,14
+    LTEXT           "%s (%s) has received an unknown fingerprint from %s.",IDC_UNKNOWN_FINGERTITLE,7,7,230,23
+    LTEXT           "Unknown Fingerprint:",IDC_UNKFINGER_HEADER,7,30,230,8
+    LTEXT           "Fingerprint",IDC_UNKNOWN_FINGERPRINT,7,40,230,8
+END
+
+IDD_VERIFY_FINGERPRINT DIALOGEX 0, 0, 244, 74
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Verify Fingerprint"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,187,53,50,14
+    LTEXT           "Verify fingerprint for %s (%s).",IDC_VERIFY_FINGERTITLE,7,7,230,18
+    LTEXT           "Fingerprint:",IDC_SESSIONDLG_FINGERPRINT,7,25,230,8
+    LTEXT           "Fingerprint",IDC_FINGER_TO_VERIFY,7,35,230,8
+    LTEXT           "I",IDC_STATIC,29,52,8,8
+    COMBOBOX        IDC_VERIFY_COMBO,33,49,48,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "verified this fingerprint.",IDC_STATIC,83,51,84,8
+END
+
+IDD_PREFS_DIALOG_DEV DIALOGEX 0, 0, 256, 251
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Development Release",IDC_STATIC,81,56,73,10,0,WS_EX_RIGHT
+    LTEXT           "Currently supported mediums:\n     - AIM\n     - ICQ\n     - MSN (untested)\n     - Yahoo (untested)\n     - Jabber (untested)\n     - Rendezvous (untested)\n\nPlease advise of any other mediums capable of supporting this type of message encryption",IDC_STATIC,109,154,125,88
+    DEFPUSHBUTTON   "Check for Updates",IDC_UPDATECHK,24,194,70,14
+    LTEXT           "This plugin is based off of the Off the Record messaging library, version 3.0.0. The source for this library can be found at http://www.cypherpunks.ca/otr/",IDC_STATIC,24,73,210,30
+    CONTROL         110,IDC_STATIC,"Static",SS_BITMAP,24,18,207,37
+    LTEXT           "This is a DEVELOPMENT release and, as such, may be prone to crashes and bizare behavior. If you do experience any behavior that you feel should not occur, please contact me (email below).",IDC_STATIC,24,104,210,26
+    LTEXT           "Questions or Comments about this plugin can be directed to twanfox@gmail.com",IDC_STATIC,24,136,210,17
+    LTEXT           "v0.0.0 (Build 0)",IDC_VERSION_TEXT,158,56,76,10
+END
+
+IDD_SMPSTARTDLG DIALOGEX 0, 0, 259, 68
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SMP Question"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,202,47,50,14
+    LTEXT           "Question:",IDC_STATIC,7,9,32,8
+    EDITTEXT        IDC_SMPQUESTIONEDIT,50,7,202,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SMPANSWEREDIT,50,27,202,14,ES_AUTOHSCROLL
+    LTEXT           "Answer:",IDC_STATIC,7,29,28,8
+END
+
+IDD_SMPCHALLENGEDLG DIALOGEX 0, 0, 259, 69
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,202,48,50,14
+    LTEXT           "Question:",IDC_STATIC,7,9,32,8
+    EDITTEXT        IDC_SMPANSWEREDIT,50,27,202,14,ES_AUTOHSCROLL
+    LTEXT           "Answer:",IDC_STATIC,7,29,28,8
+    LTEXT           "Static",IDC_SMPQUESTION,53,9,199,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_PREFS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        VERTGUIDE, 24
+        VERTGUIDE, 234
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 244
+        HORZGUIDE, 18
+    END
+
+    IDD_PREFS_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        VERTGUIDE, 19
+        VERTGUIDE, 234
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+        HORZGUIDE, 192
+        HORZGUIDE, 216
+    END
+
+    IDD_PREFS_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+        HORZGUIDE, 18
+    END
+
+    IDD_SESSIONID, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 162
+        VERTGUIDE, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_NEWFINGERPRINT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        VERTGUIDE, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_UNKNOWN_FINGERPRINT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        VERTGUIDE, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_VERIFY_FINGERPRINT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        VERTGUIDE, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_PREFS_DIALOG_DEV, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        VERTGUIDE, 24
+        VERTGUIDE, 234
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 244
+        HORZGUIDE, 18
+    END
+
+    IDD_SMPSTARTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+
+    IDD_SMPCHALLENGEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_RISEN_LOGO          BITMAP                  "risen-logo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDB_LARGE_ICO           PNG                     "risen_icon_48.png"
+IDB_SMALL_ICO           PNG                     "risen_icon_32.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,7,0,386
+ PRODUCTVERSION 0,7,0,386
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Ian Z Ledrick aka Thisita"
+            VALUE "FileDescription", "Trillian OTR - Risen Plugin for Trillian"
+            VALUE "FileVersion", "0.7.0.386"
+            VALUE "InternalName", "Trillian OTR - RISEN"
+            VALUE "LegalCopyright", "Copyright (C) 2011"
+            VALUE "OriginalFilename", "TrillianOTR.dll"
+            VALUE "ProductName", "Trillian OTR - Risen Plugin for Trillian"
+            VALUE "ProductVersion", "0.7.0.386"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_VERIFY_FINGERPRINT DLGINIT
+BEGIN
+    IDC_VERIFY_COMBO, 0x403, 5, 0
+0x6168, 0x6576, "\000" 
+    IDC_VERIFY_COMBO, 0x403, 9, 0
+0x6168, 0x6576, 0x6e20, 0x746f, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_UNKNOWN_MESSAGE     "Unknown OTR Control Message."
+    IDS_NEGOTIATE_KEYS      "Negotiating session keys."
+    IDS_SESSION_ESTABLISHED "Private session with %s established."
+    IDS_SESSION_END_UNCLOSED 
+                            "Private session with %s lost. You should end or refresh the conversation before sending again."
+    IDS_SESSION_END_AUTOCLOSE 
+                            "Private session with %s lost and automatically closed."
+    IDS_SESSION_REMOTE_REFRESH 
+                            "%s has requested a refresh of the existing OTR session."
+    IDS_UNDECRYPTABLE_MESSAGE 
+                            "%s has sent an unexpected encrypted message that cannot be decrypted."
+    IDS_SESSION_REQUEST     "%s has requested a private OTR session."
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="cipher">
+      <UniqueIdentifier>{c05bf04d-7b29-4323-8dc9-25ab386592b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mpi">
+      <UniqueIdentifier>{98d23ad3-b3fb-4ede-a9d9-88f2b5b80c08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mpi\generic">
+      <UniqueIdentifier>{0cef17af-9a17-4572-8945-054248bb228a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{9f68e2be-d0bf-4af3-8b9f-a380ae1a1583}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="custom">
+      <UniqueIdentifier>{3f2652c4-2ea7-4b51-bae3-4c8018863c52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="removed">
+      <UniqueIdentifier>{b9d04b21-03cd-4e43-9c73-b13550dd6407}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\src\ath.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\src\global.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\src\misc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\src\missing-string.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\src\module.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\src\secmem.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\src\sexp.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\src\stdmem.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha1.c">
+      <Filter>cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha256.c">
+      <Filter>cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\sha512.c">
+      <Filter>cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\tiger.c">
+      <Filter>cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\twofish.c">
+      <Filter>cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\ac.c">
+      <Filter>cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\arcfour.c">
+      <Filter>cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\blowfish.c">
+      <Filter>cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\cast5.c">
+      <Filter>cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\cipher.c">
+      <Filter>cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\crc.c">
+      <Filter>cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\des.c">
+      <Filter>cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\dsa.c">
+      <Filter>cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\elgamal.c">
+      <Filter>cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\md.c">
+      <Filter>cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\md4.c">
+      <Filter>cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\md5.c">
+      <Filter>cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\primegen.c">
+      <Filter>cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\pubkey.c">
+      <Filter>cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.c">
+      <Filter>cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\rfc2268.c">
+      <Filter>cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\rijndael.c">
+      <Filter>cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\rmd160.c">
+      <Filter>cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\rndw32.c">
+      <Filter>cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\rsa.c">
+      <Filter>cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\serpent.c">
+      <Filter>cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-scan.c">
+      <Filter>mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpiutil.c">
+      <Filter>mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-add.c">
+      <Filter>mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-bit.c">
+      <Filter>mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-cmp.c">
+      <Filter>mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpicoder.c">
+      <Filter>mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-div.c">
+      <Filter>mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-gcd.c">
+      <Filter>mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpih-div.c">
+      <Filter>mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpih-mul.c">
+      <Filter>mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-inline.c">
+      <Filter>mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-inv.c">
+      <Filter>mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-mpow.c">
+      <Filter>mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-mul.c">
+      <Filter>mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-pow.c">
+      <Filter>mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\generic\mpih-mul2.c">
+      <Filter>mpi\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\generic\mpih-mul3.c">
+      <Filter>mpi\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\generic\mpih-rshift.c">
+      <Filter>mpi\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\generic\mpih-sub1.c">
+      <Filter>mpi\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\generic\udiv-w-sdiv.c">
+      <Filter>mpi\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\generic\mpih-add1.c">
+      <Filter>mpi\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\generic\mpih-lshift.c">
+      <Filter>mpi\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\generic\mpih-mul1.c">
+      <Filter>mpi\generic</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="custom\config.h">
+      <Filter>custom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\src\mpi.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\src\secmem.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\src\stdmem.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\src\types.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\src\ath.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\src\cipher.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\src\g10lib.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\src\gcrypt.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\src\gcrypt-module.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\bithelp.h">
+      <Filter>cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\rand-internal.h">
+      <Filter>cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\random.h">
+      <Filter>cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\cipher\rmd.h">
+      <Filter>cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\longlong.h">
+      <Filter>mpi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-inline.h">
+      <Filter>mpi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\mpi-internal.h">
+      <Filter>mpi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgcrypt-1.2.2\libgcrypt\mpi\generic\mpi-asm-defs.h">
+      <Filter>mpi\generic</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

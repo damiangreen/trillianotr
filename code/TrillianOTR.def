@@ -1,0 +1,4 @@
+LIBRARY      "TrillianOTR"
+EXPORTS
+plugin_main				@1
+plugin_version			@2
